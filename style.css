@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+}
+
+.right {
+  width: 60%;
+}
+
+.left {
+  display: flex;
+  width: 40%;
+  height: 98vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/bkgrd.png);
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+/*.left img {
+  height: 100%;
+  min-height: 350px;
+  width: 100%;
+}*/
