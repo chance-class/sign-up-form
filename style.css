@@ -22,3 +22,10 @@
   min-height: 350px;
   width: 100%;
 }*/
+
+.name, 
+.contact, 
+.password {
+  display: flex;
+  gap: 40px;
+}
