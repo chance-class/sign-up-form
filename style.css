@@ -27,5 +27,29 @@
 .contact, 
 .password {
   display: flex;
-  gap: 40px;
+  gap: 50px;
+  padding: 10px 0px; 
+}
+
+.intro {
+  padding: 80px 200px 25px 40px;
+}
+
+.form {
+  padding: 10px 100px 20px 40px;
+}
+
+input {
+  width: 250px;
+  height: 1.2rem;
+}
+
+.footer {
+  padding: 10px 0 0 40px;
+}
+
+button {
+  margin-bottom: 15px;
+  width: 200px;
+  height: 2rem;
 }
