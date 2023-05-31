@@ -32,7 +32,8 @@
 }
 
 .intro {
-  padding: 80px 200px 25px 40px;
+  padding: 80px 80px 25px 40px;
+  font-weight: bold;
 }
 
 .form {
@@ -41,15 +42,46 @@
 
 input {
   width: 250px;
-  height: 1.2rem;
+  height: 1.6rem;
+  font-size: 1rem;
+  padding-left: 10px;
 }
 
 .footer {
   padding: 10px 0 0 40px;
+  font-size: 1.1rem;
 }
 
 button {
   margin-bottom: 15px;
   width: 200px;
   height: 2rem;
+  font-size: 1.1rem;
+}
+
+.intro, 
+h3 {
+  font-size: 1.6rem;
+  font-family: Helvetica;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a, 
+button {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer, 
+button, 
+input {
+  font-family: Helvetica;
 }
