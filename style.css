@@ -64,6 +64,12 @@ input {
   height: 1.6rem;
   font-size: 1rem;
   padding-left: 10px;
+  border: 1px solid #E5E4E2;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid #7C67EF;
 }
 
 .footer {
@@ -73,9 +79,16 @@ input {
 
 button {
   margin-bottom: 15px;
-  width: 200px;
-  height: 2rem;
+  width: 230px;
+  height: 3rem;
   font-size: 1.1rem;
+  background-color: #A12DD6;
+  color: white;
+  border-radius: 8px;
+}
+
+button:hover {
+  filter: brightness(120%);
 }
 
 .intro, 
@@ -97,10 +110,47 @@ button {
 
 a {
   text-decoration: none;
+  color: #A12DD6;
+}
+
+a:hover {
+  filter: brightness(120%);
 }
 
 .footer, 
 button, 
 input {
   font-family: Helvetica;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    height: 300px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .left-title {
+    top: 3rem;
+  }
+
+  .left img {
+    background-size: fill;
+  }
+
+  .intro {
+    padding: 45px 10px 10px;
+  }
+
+  .form, 
+  .footer {
+    padding-left: 10px;
+  }
 }
