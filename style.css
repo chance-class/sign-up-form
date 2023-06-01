@@ -97,7 +97,8 @@ h3 {
   font-family: Helvetica;
 }
 
-label {
+label, 
+#error {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -122,6 +123,15 @@ button,
 input {
   font-family: Helvetica;
 }
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input[type="password"]:valid {
+  border: 1px solid #63EB00;
+}
+
 
 @media screen and (max-width: 900px) {
   .container {

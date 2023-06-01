@@ -7,6 +7,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     <title>Sign Up | Odin</title>
+    <script>
+      function checkPass () {
+        let pw1 = document.getElementById("pwd");
+        let pw2 = document.getElementById("pwd-confirm");
+        let error = document.getElementById("error");
+        if (pw1.value == pw2.value) {
+          error.style.color = "green";
+          error.textContent = "Passwords Match!";
+        } else {
+          error.style.color = "red";
+          error.textContent = "Passwords do not match.";
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -47,11 +61,14 @@
             <div class="password">
               <div class="pass">
                 <label for="pwd">Password</label><br>
-                <input type="password" id="pwd" name="pwd">
+                <input type="password" id="pwd" name="pwd" minlength="8" maxlength="15" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must be between 8 and 15 characters, and contain at least one lowercase letter, one uppercase letter, and a number." required>
               </div>
               <div class="pass-confirm">
                 <label for="pwd-confirm">Confirm Password</label><br>
-                <input type="password" id="pwd-confirm" name="pwd-confirm">
+                <input type="password" id="pwd-confirm" name="pwd-confirm" minlength="8" maxlength="15" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="checkPass();" required>
+                <span id="error"></span>
               </div>
             </div>
           </form>
