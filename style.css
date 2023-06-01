@@ -3,13 +3,13 @@
 }
 
 .right {
-  width: 60%;
+  width: 65%;
 }
 
 .left {
   display: flex;
   position: relative;
-  width: 40%;
+  width: 35%;
   align-items: center;
   justify-content: center;
   /*background-image: url(./images/bkgrd.png);
@@ -34,7 +34,7 @@
   opacity: 0.6;
   color: white;
   top: 17rem;
-  font-size: 3.8em;
+  font-size: 3.4em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@
 }
 
 .intro {
-  padding: 180px 80px 25px 40px;
+  padding: 180px 120px 25px 40px;
   font-weight: bold;
 }
 
