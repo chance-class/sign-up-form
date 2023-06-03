@@ -103,7 +103,8 @@ h3 {
 
 label, 
 #error,
-#capital, 
+#capital,
+#lower, 
 #number, 
 #length {
   text-transform: uppercase;
@@ -139,7 +140,8 @@ input[type="password"]:valid {
   border: 1px solid #63EB00;
 }
 
-#capital, 
+#capital,
+#lower, 
 #number, 
 #length {
   display: none;
