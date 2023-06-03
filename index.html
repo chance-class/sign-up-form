@@ -20,7 +20,7 @@
         } else {
           document.getElementById("number").style.display = "none";
         }
-        if ((pw1.value.length < 8 || pw1.value.length > 15)) {
+        if ((pw1.value.length < 8)) {
           document.getElementById("length").style.display = "block";
         } else {
           document.getElementById("length").style.display = "none";
@@ -80,17 +80,17 @@
             <div class="password">
               <div class="pass">
                 <label for="pwd">Password</label><br>
-                <input type="password" id="pwd" name="pwd" minlength="8" maxlength="15" 
+                <input type="password" id="pwd" name="pwd" minlength="8" 
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must be between 8 and 15 characters, and contain at least one lowercase letter, one uppercase letter, and a number." onkeyup="checkReq();" required>
-                <div id="capital">Must include at least one uppercase letter</div>
-                <div id="number">Must include at least one number</div>
-                <div id="length">Must be between 8 and 15 characters</div>
+                <div id="capital">Needs one uppercase letter</div>
+                <div id="number">Needs one number</div>
+                <div id="length">Needs at least 8 characters</div>
               </div>
               <div class="pass-confirm">
                 <label for="pwd-confirm">Confirm Password</label><br>
-                <input type="password" id="pwd-confirm" name="pwd-confirm" minlength="8" maxlength="15" 
+                <input type="password" id="pwd-confirm" name="pwd-confirm" minlength="8" 
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="checkPass();" required>
-                <span id="error"></span>
+                <div id="error"></div>
               </div>
             </div>
           </form>
