@@ -8,11 +8,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     <title>Sign Up | Odin</title>
     <script>
+      function checkReq () {
+        let pw1 = document.getElementById("pwd");
+        if (!(pw1.value.match(/[A-Z]/))) {
+          document.getElementById("capital").style.display = "block";
+        } else {
+          document.getElementById("capital").style.display = "none";
+        }
+        if (!(pw1.value.match(/[0-9]/))) {
+          document.getElementById("number").style.display = "block";
+        } else {
+          document.getElementById("number").style.display = "none";
+        }
+        if ((pw1.value.length < 8 || pw1.value.length > 15)) {
+          document.getElementById("length").style.display = "block";
+        } else {
+          document.getElementById("length").style.display = "none";
+        }
+      }
+
       function checkPass () {
         let pw1 = document.getElementById("pwd");
         let pw2 = document.getElementById("pwd-confirm");
         let error = document.getElementById("error");
-        if (pw1.value == pw2.value) {
+        if (pw1.value === pw2.value) {
           error.style.color = "green";
           error.textContent = "Passwords Match!";
         } else {
@@ -62,7 +81,10 @@
               <div class="pass">
                 <label for="pwd">Password</label><br>
                 <input type="password" id="pwd" name="pwd" minlength="8" maxlength="15" 
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must be between 8 and 15 characters, and contain at least one lowercase letter, one uppercase letter, and a number." required>
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must be between 8 and 15 characters, and contain at least one lowercase letter, one uppercase letter, and a number." onkeyup="checkReq();" required>
+                <div id="capital">Must include at least one uppercase letter</div>
+                <div id="number">Must include at least one number</div>
+                <div id="length">Must be between 8 and 15 characters</div>
               </div>
               <div class="pass-confirm">
                 <label for="pwd-confirm">Confirm Password</label><br>
