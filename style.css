@@ -133,7 +133,7 @@ input {
   font-family: Helvetica;
 }
 
-input:invalid {
+input:focus:invalid {
   border: 1px solid red;
 }
 
