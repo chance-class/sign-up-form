@@ -22,7 +22,6 @@
   overflow: hidden;
   min-height: 350px;
   position: absolute;
-  width: 100%;
   z-index: -1;
 }
 
@@ -58,6 +57,7 @@
 
 .form {
   padding: 10px 100px 20px 40px;
+  background-color: white;
   box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 4px 2px -2px rgba(0, 0, 0, 0.3);
 }
 
@@ -167,7 +167,8 @@ input[type="password"]:valid {
   }
 
   .left img {
-    background-size: fill;
+    width: 900px;
+    height: auto;
   }
 
   .intro {
