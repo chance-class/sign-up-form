@@ -49,7 +49,8 @@
 .intro {
   padding: 180px 120px 25px 40px;
   font-weight: bold;
-  background-color: #F5F2E6;
+  /*background-color: #F5F2E6;*/
+  background-color: #FFF7D9;
 }
 
 .form {
@@ -75,7 +76,7 @@ input:focus {
 .footer {
   padding: 20px 0 20px 40px;
   font-size: 1.1rem;
-  background-color:#F5F2E6;
+  background-color:#FFF7D9;
 }
 
 button {
