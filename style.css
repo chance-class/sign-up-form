@@ -146,7 +146,12 @@ input[type="email"]:valid {
   color: red;
   font-size: 0.75rem;
   font-weight: 600;
-  overflow-wrap: break-word;
+}
+
+#error {
+  color: red;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 900px) {
